@@ -1,0 +1,33 @@
+@media screen and (max-width: 1200px) {
+    .feature--content {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .feature--content {
+        max-width: 740px;
+    }
+    .feature--box {
+        max-width: calc(100%/2);
+        margin-bottom: 65px;
+    }
+    .feature--grey .feature--box {
+        max-width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .feature--content {
+        max-width: 540px;
+    }
+    .feature--row {
+        justify-content: center;
+    }
+    .feature--box {
+        max-width: 100%;
+    }
+    .feature .feature--box {
+        max-width: 100%;
+    }
+}

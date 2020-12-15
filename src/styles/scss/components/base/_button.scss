@@ -1,0 +1,32 @@
+.btn {
+    width: 160px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-text;
+    justify-content: center;
+}
+
+.btn--primary {
+    background-image: linear-gradient(120deg, #25aae1 0%, #40e495 40%, #30dd8a 60%, #0fc369 120%);
+    color: white;
+    background-size: 300% 100%;
+    transition: all .6s linear;
+    &:hover {
+        background-image: linear-gradient(120deg, #57e29f 0%, #57e29f 40%, #47d68f 60%, #47d68f 120%);
+        background-size: 100% 300%;
+        transition: all .6s linear;
+    }
+}
+
+.btn--white {
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all linear 0.3s;
+    &:hover {
+        background-color: #fff;
+        color: black;
+    }
+}

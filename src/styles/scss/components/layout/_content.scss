@@ -1,0 +1,106 @@
+.feature {
+    width: 100%;
+    display: block;
+    &--content {
+        padding: 100px 0;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        margin: 0;
+        text-align: center;
+        &--main {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            color: $color-primary;
+        }
+        &--sub {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 44px;
+            color: $color-text;
+        }
+    }
+    &--row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+}
+
+.feature--box {
+    max-width: calc(100%/4);
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__img {
+        &--width {
+            width: 100%;
+        }
+        &--move {
+            transition: transform linear 0.1s;
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+    &__text {
+        margin: 35px 20px;
+        &--title {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: $color-primary;
+        }
+        &--desc {
+            font-size: 1.4rem;
+            color: $color-text;
+        }
+    }
+}
+
+.feature--grey {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://cdn.shopify.com/s/files/1/0335/3526/2856/t/1/assets/1592399047612.jpg?v=10228381751900981085%22");
+    background-size: cover;
+    & .feature__title {
+        &--main {
+            color: $color-primary-gey;
+        }
+        &--sub {
+            color: $color-text-grey;
+        }
+    }
+    & .feature--box {
+        max-width: calc(100%/3);
+        &__text {
+            &--title {
+                color: $color-primary-gey;
+            }
+            &--desc {
+                color: $color-text-grey;
+            }
+        }
+        &__img {
+            overflow: hidden;
+            transition: all .5s;
+            &:hover {
+                transform: scale(0.9);
+                &>.feature--box__img--scale {
+                    transition: all .5s;
+                    transform: scale(1.2);
+                }
+            }
+            &--scale {
+                transition: all .5s;
+            }
+        }
+    }
+}
